@@ -11,6 +11,7 @@
 html {
   box-sizing: border-box;
   display: block;
+  zoom: 0.85;
 }
 * {
   margin-top: 0px;
@@ -305,6 +306,7 @@ body {
   padding-bottom: 28px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
+/* 1* */
 .second-logo {
   color: var(--secondary-text-color);
 }
@@ -313,6 +315,9 @@ body {
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
+  color: var(--secondary-text-color);
+  margin-bottom: 9px;
+  display: block;
 }
 .address {
   font-style: normal;
@@ -334,9 +339,25 @@ body {
 .main-link-second:hover {
   outline: 1px solid var(--secondary-text-color);
 }
-.address-item {
+.mail.address-item {
+  color: var(--description-text-color);
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.14;
   margin-bottom: 9px;
   display: block;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mail.address-item:hover,
+.mail.address-item:focus {
+  color: var(--accent-color);
+}
+/* 1* */
+/* 2* */
+.second-footer-section {
+  margin-right: 94px;
+  margin-top: 12px;
 }
 .slogan {
   font-weight: bold;
@@ -354,6 +375,7 @@ body {
   padding-left: 0px;
   list-style: none;
 }
+/*  */
 .link-element + .link-element {
   margin-left: 10px;
 }
@@ -378,9 +400,55 @@ body {
 .link-element .icon {
   fill: var(--primary-background-color);
 }
-.second-footer-section {
-  margin-right: 94px;
+/*  */
+/* 2* */
+/* 3* */
+.third-footer-section {
+  margin-top: 12px;
 }
+/*  */
+.subscribe-form {
+  height: 52px;
+  display: flex;
+  align-items: flex-start;
+}
+.subscribe {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  width: 358px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 17px 16px;
+  color: var(--description-text-color);
+}
+.subscribe-send {
+  font-size: 16px;
+  line-height: 30px;
+  padding: 9px 28px;
+  display: flex;
+  align-items: center;
+  color: var(--secondary-text-color);
+  border-radius: 4px;
+  background-color: var(--accent-color);
+  letter-spacing: 0.06em;
+  font-family: Roboto;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border: 2px solid transparent;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.subscribe-send:focus,
+.subscribe-send:hover {
+  border: 2px solid var(--primary-text-color);
+}
+.icon-submit {
+  margin-left: 10px;
+}
+.subscribe + .subscribe-send {
+  margin-left: 12px;
+}
+/*  */
 .copyright {
   width: 1200px;
   display: flex;
@@ -388,21 +456,16 @@ body {
   justify-content: center;
   margin-top: 18px;
   padding-bottom: 21px;
+  color: var(--description-text-color);
 }
 .copy-text {
-  color: rgba(255, 255, 255, 0.4);
+  color: var(--description-text-color);
   font-weight: normal;
   font-size: 12px;
   line-height: 2;
   text-align: center;
 }
-.footer .mail {
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.second-footer-section,
-.third-footer-section {
-  margin-top: 12px;
-}
+/* 3* */
 /* .mail {
   color: var(--description-text-color);
   text-decoration: none;
